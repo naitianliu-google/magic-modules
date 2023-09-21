@@ -570,3 +570,7 @@ Use the `google_identity_platform_config` resource instead. It contains a more c
 ### `reconcile_connections` now defaults from API
 
 `reconcile_connections` previously defaults to true. Now it will default from the API.
+
+## Resource: `google_gkeonprem_bare_metal_admin_cluster`
+
+Delete operation is disabled. The command `terraform destroy` maps to no-op. Users need to delete resource manually. Please refer to the [user guide](https://cloud.google.com/anthos/clusters/docs/bare-metal/latest/how-to/reset-nodes) for the instructions of cluster deletion.
